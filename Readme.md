@@ -30,6 +30,16 @@ If training error is low but test error is high, it indicates high variance, mea
 
 So, bias is typically detected through high training error, while variance is detected through a large gap between training and test performance.
 
+## L1 Vs L2 Regularisation
+
+L2 regularization (weight decay) penalizes the squared magnitude of weights, encouraging small but non-zero weights, which leads to smoother models and reduced variance.
+
+L1 regularization penalizes the absolute value of weights, which promotes sparsity by driving some weights exactly to zero, effectively performing feature selection.
+
+The key difference is that L2 shrinks weights continuously, while L1 can eliminate features entirely.
+
+In practice, L2 is preferred when all features are expected to contribute moderately, whereas L1 is used when we suspect only a subset of features are relevant or we want interpretability.
+
 ---
 
 ## Scenario
