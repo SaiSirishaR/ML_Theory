@@ -1,5 +1,35 @@
 # ML Fundamentals
 
+## Bias-Variance Tradeoff
+
+Bias is the systematic error from incorrect model assumptions, and variance is the sensitivity of the model to different training samples.
+
+Bias–variance tradeoff describes how increasing model complexity reduces bias because the hypothesis space becomes richer and can better approximate the true function, but at the same time increases variance because the model becomes more sensitive to noise in the training data.
+
+As a result, test error can be decomposed into bias, variance, and irreducible noise, and improving one can often worsen the other depending on model capacity.
+
+Regularization techniques and appropriate model selection are used to find a balance that minimizes generalization error.
+
+## Overfitting Vs Underfitting
+
+Overfitting happens when a model learns the training data too well, including noise, leading to high variance and poor generalization on test data.
+
+Underfitting happens when the model is too simple to capture the underlying structure of the data, leading to high bias and poor performance even on training data.
+
+The key difference is that overfitting performs well on training but fails on test, while underfitting performs poorly on both.
+
+We typically address this using regularization, model capacity control, and improving data quality or quantity.
+
+## Detecting Bias, Variance
+
+In practice, we diagnose bias and variance by comparing training and test error.
+
+If both training and test error are high, it indicates high bias, meaning the model is too simple or underfitting and cannot capture the underlying structure of the data.
+
+If training error is low but test error is high, it indicates high variance, meaning the model is overfitting and is sensitive to variations in the training data.
+
+So, bias is typically detected through high training error, while variance is detected through a large gap between training and test performance.
+
 ---
 
 ## Scenario
