@@ -428,3 +428,10 @@ So:
 
 - attention = communication between words  
 - FFN = computation inside each word  
+
+
+# Probability 
+
+### What is a Random varaible?
+
+A random variable is a function that maps outcomes of a random process into real numbers, allowing us to mathematically represent and analyze uncertainty.
